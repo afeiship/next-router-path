@@ -10,10 +10,6 @@ npm install -S @feizheng/next-router-path
 ```js
 import '@feizheng/next-router-path';
 
-/**
- * nx.routerPath('/user/:id', { id: 123 });
- *
- * result:
- * /user/123
- * /
+nx.routerPath('/user/:id', { id: 123 });
+// result: /user/123
 ```
