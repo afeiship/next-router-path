@@ -4,7 +4,7 @@
   var ROUTE_RE = /:(\w+)\??/g;
 
   nx.routerPath = function (inString, inArgs) {
-    return inString.replace(ROUTE_RE, function (key, match) {
+    return inString.replace(ROUTE_RE, function (_, match) {
       return nx.get(inArgs, match, '');
     })
   };

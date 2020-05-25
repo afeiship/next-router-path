@@ -3,7 +3,7 @@
  * description: Router path template for next.
  * homepage: https://github.com/afeiship/next-router-path
  * version: 1.0.2
- * date: 2020-05-25T01:03:14.219Z
+ * date: 2020-05-25T01:03:55.348Z
  * license: MIT
  */
 
@@ -13,7 +13,7 @@
   var ROUTE_RE = /:(\w+)\??/g;
 
   nx.routerPath = function (inString, inArgs) {
-    return inString.replace(ROUTE_RE, function (key, match) {
+    return inString.replace(ROUTE_RE, function (_, match) {
       return nx.get(inArgs, match, '');
     })
   };
