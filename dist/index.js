@@ -1,6 +1,15 @@
+/*!
+ * name: @jswork/next-router-path
+ * description: Router path template for next.
+ * homepage: https://github.com/afeiship/next-router-path
+ * version: 1.0.0
+ * date: 2020-11-21 10:41:09
+ * license: MIT
+ */
+
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var ROUTE_RE = /:(\w+)\??/g;
 
   nx.routerPath = function (inString, inArgs) {
